@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.mindfulness">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AuthorsActivity"
+            android:label="@string/category_authors"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".LessonsActivity"
+            android:label="@string/category_lessons"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MeditationActivity"
+            android:label="@string/category_meditation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MindfulnessActivity"
+            android:label="@string/category_mindfulness"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
